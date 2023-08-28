@@ -6,6 +6,8 @@ import ProfilePic from '../../public/images/profile/developer-pic-2.jpg'
 import Image from 'next/image';
 import { MotionValue, SpringOptions, useInView, useMotionValue, useSpring } from 'framer-motion';
 import { Skills } from '@/components/Skills';
+import { RailDown } from '@/components/RailDown';
+import { educationItems, experienceItems } from '@/helpers/helpers';
 
 interface AnimatedNumbersProps {
     value: number;
@@ -78,6 +80,8 @@ const About = () => {
                         </div>
                     </div>
                     <Skills />
+                    <RailDown title='Experience' items={experienceItems} />
+                    <RailDown title='Education' items={educationItems} />
                 </Layout>
             </main>
         </>
