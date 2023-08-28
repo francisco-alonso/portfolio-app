@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 
-interface TwitterIconProps extends React.SVGProps<SVGSVGElement> {
+interface IconProps extends React.SVGProps<SVGSVGElement> {
     className?: string;
 };
-export const GithubIcon = ({ className, ...rest }: TwitterIconProps) => (
+export const GithubIcon = ({ className, ...rest }: IconProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1em"
@@ -20,7 +20,7 @@ export const GithubIcon = ({ className, ...rest }: TwitterIconProps) => (
     </svg>
 );
 
-export const TwitterIcon = ({ className, ...rest }: TwitterIconProps) => (
+export const TwitterIcon = ({ className, ...rest }: IconProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1em"
@@ -37,7 +37,7 @@ export const TwitterIcon = ({ className, ...rest }: TwitterIconProps) => (
     </svg>
 );
 // #0A66C2
-export const LinkedInIcon = ({ className, ...rest }: TwitterIconProps) => (
+export const LinkedInIcon = ({ className, ...rest }: IconProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1em"
@@ -58,7 +58,7 @@ export const LinkedInIcon = ({ className, ...rest }: TwitterIconProps) => (
     </svg>
 );
 
-export const PinterestIcon = ({ className, ...rest }: TwitterIconProps) => (
+export const PinterestIcon = ({ className, ...rest }: IconProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1em"
@@ -75,7 +75,7 @@ export const PinterestIcon = ({ className, ...rest }: TwitterIconProps) => (
     </svg>
 );
 
-export const DribbbleIcon = ({ className, ...rest }: TwitterIconProps) => (
+export const DribbbleIcon = ({ className, ...rest }: IconProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width="1em"
@@ -96,7 +96,7 @@ export const DribbbleIcon = ({ className, ...rest }: TwitterIconProps) => (
     </svg>
 );
 
-export const SunIcon: React.FC = ({ className, ...rest }: TwitterIconProps) => (
+export const SunIcon: React.FC = ({ className, ...rest }: IconProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -274,7 +274,7 @@ export const SunIcon: React.FC = ({ className, ...rest }: TwitterIconProps) => (
     </svg>
 );
 
-export const MoonIcon = ({ className, ...rest }: TwitterIconProps) => (
+export const MoonIcon = ({ className, ...rest }: IconProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -430,7 +430,7 @@ export const MoonIcon = ({ className, ...rest }: TwitterIconProps) => (
     </svg>
 );
 
-export const CircularText = ({ className, ...rest }: TwitterIconProps) => (
+export const CircularText = ({ className, ...rest }: IconProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width="496"
@@ -444,7 +444,7 @@ export const CircularText = ({ className, ...rest }: TwitterIconProps) => (
     </svg>
 );
 
-export const LinkArrow = ({ className, ...rest }: TwitterIconProps) => (
+export const LinkArrow = ({ className, ...rest }: IconProps) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width={24}

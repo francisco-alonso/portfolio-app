@@ -4,6 +4,13 @@ interface CustomLinkI {
     className?: string;
 };
 
+interface CustomLinkMobileI {
+    href: string;
+    title: string;
+    className?: string;
+    toggle: () => void;
+};
+
 interface EducationProps {
     type: string;
     time?: string;
