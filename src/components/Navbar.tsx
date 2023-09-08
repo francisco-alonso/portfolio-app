@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon, TwitterIcon } from './Icons';
 import { useThemeSwitcher } from '@/hooks/useThemeSwitcher';
 import { motion } from "framer-motion";
+import { GITHUB_LINK_URL, LINKDIN_LINK_URL, TWITTER_LINK_URL } from '@/utils/globals';
 
 const CustomLink = ({ href, title, className=''}: CustomLinkI) => {
     const router = useRouter();
@@ -61,13 +62,13 @@ export const Navbar = () => {
                 </nav>
 
                 <nav className='flex items-center justify-center flex-wrap'>
-                    <a href='https://www.twitter.com' target='_blank' className='w-6 mr-3'>
+                    <a href={TWITTER_LINK_URL} target='_blank' className='w-6 mr-3'>
                         <TwitterIcon />
                     </a>
-                    <a href='https://www.linkdin.com' target='_blank' className='w-6 mx-3'>
+                    <a href={LINKDIN_LINK_URL} target='_blank' className='w-6 mx-3'>
                         <LinkedInIcon />
                     </a>
-                    <a href='https://www.github.com' target='_blank' className='w-6 ml-3 bg-light dark:bg-light rounded-full'>
+                    <a href={GITHUB_LINK_URL} target='_blank' className='w-6 ml-3 bg-light dark:bg-dark rounded-full'>
                         <GithubIcon />
                     </a>
                     <button
@@ -94,13 +95,13 @@ export const Navbar = () => {
                             </nav>
 
                             <nav className='flex items-center justify-center flex-wrap mt-2'>
-                                <a href='https://www.twitter.com' target='_blank' className='w-6 mr-3 sm:mx-1'>
+                                <a href={TWITTER_LINK_URL} target='_blank' className='w-6 mr-3 sm:mx-1'>
                                     <TwitterIcon />
                                 </a>
-                                <a href='https://www.linkdin.com' target='_blank' className='w-6 mx-3 sm:mx-1'>
+                                <a href={LINKDIN_LINK_URL} target='_blank' className='w-6 mx-3 sm:mx-1'>
                                     <LinkedInIcon />
                                 </a>
-                                <a href='https://www.github.com' target='_blank' className='w-6 ml-3 sm:mx-1'>
+                                <a href={GITHUB_LINK_URL} target='_blank' className='w-6 ml-3 sm:mx-1'>
                                     <GithubIcon />
                                 </a>
                                 <button

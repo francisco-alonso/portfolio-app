@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import project1 from "../../public/images/projects/portfolio-cover-image.jpg";
+import { Transition } from '@/components/Transition';
 
 const FeaturedProject = ({ type, title, summary, img, link, github }: FeaturedProjectProps) => {
     return (
@@ -38,7 +39,7 @@ const Project = ({ title, type, img, link, github }: FeaturedProjectProps) => {
     return (
         <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light dark:bg-dark dark:border-light p-6 relative xs:p-4'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]'/>
-            <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
+                <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
                     <Image {...img} alt={title} className='w-full h-auto' />
                 </Link>
                 <div className='w-full flex flex-col items-start justify-between mt-4'>
@@ -63,10 +64,10 @@ const Projects = () => {
     return (
         <>
             <Head>
-                <title>About</title>
+                <title>Projects</title>
                 <meta name='description' content='Projects' />
             </Head>
-
+            <Transition />
             <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
                 <Layout className='pt-16'>
                     <AnimatedText text="Custom Projects" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
