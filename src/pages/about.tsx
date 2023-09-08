@@ -2,7 +2,7 @@ import { AnimatedText } from '@/components/AnimatedText';
 import { Layout } from '@/components/Layout';
 import Head from 'next/head';
 import React, { useCallback, useEffect, useRef } from 'react'
-import ProfilePic from '../../public/images/profile/pic_me.png'
+//import ProfilePic from '../../public/images/profile/pic_me.png'
 import Image from 'next/image';
 import { MotionValue, SpringOptions, useInView, useMotionValue, useSpring } from 'framer-motion';
 import { Skills } from '@/components/Skills';
@@ -72,8 +72,8 @@ const About = () => {
                         </div>
                         <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8'>
                             <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-light'/>
-                            <Image src={ProfilePic} alt='Francisco Lopez' className='w-full h-auto rounded-2xl' priority
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
+                            {/* <Image src={ProfilePic} alt='Francisco Lopez' className='w-full h-auto rounded-2xl' priority
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/> */}
                         </div>
                         <div className='col-span-2 flex flex-col items-end justify-evenly xl:col-span-8 xl:flex-row xl:items-center md:order-3'>
                             <div className='flex flex-col items-end justify-center xl:items-center'>
