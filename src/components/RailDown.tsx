@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { useScroll, motion } from "framer-motion";
-import { LiIcon } from './LiIcon';
+import { LiIcon } from './subcomponents/LiIcon';
 
 interface RailProps {
     title: string;

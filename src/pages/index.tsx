@@ -3,11 +3,11 @@ import { Layout } from '@/components/Layout';
 import Head from 'next/head';
 import Image from 'next/image';
 import ProfilePic from "../../public/images/profile/profile-pic-logo.png";
-import { AnimatedText } from '@/components/AnimatedText';
+import { AnimatedText } from '@/components/subcomponents/AnimatedText';
 import Link from 'next/link';
-import { LinkArrow } from '@/components/Icons';
+import { LinkArrow } from '@/components/subcomponents/Icons';
 import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg'
-import { Transition } from '@/components/Transition';
+import { Transition } from '@/components/subcomponents/Transition';
 
 const Home = () => {
   return (

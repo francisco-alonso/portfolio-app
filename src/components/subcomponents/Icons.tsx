@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import SetElement from './subcomponents/Set';
+import SetElement from './Set';
 
 interface IconProps extends React.SVGProps<SVGSVGElement> {
     className?: string;
