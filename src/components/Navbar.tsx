@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { Logo } from './Logo';
+import { Logo } from './subcomponents/Logo';
 import { useRouter } from 'next/router';
-import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon, TwitterIcon } from './Icons';
+import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon, TwitterIcon } from './subcomponents/Icons';
 import { useThemeSwitcher } from '@/hooks/useThemeSwitcher';
 import { motion } from "framer-motion";
 import { GITHUB_LINK_URL, LINKDIN_LINK_URL, TWITTER_LINK_URL } from '@/utils/globals';

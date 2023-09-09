@@ -1,4 +1,4 @@
-import { AnimatedText } from '@/components/AnimatedText';
+import { AnimatedText } from '@/components/subcomponents/AnimatedText';
 import { Layout } from '@/components/Layout';
 import Head from 'next/head';
 import React, { useCallback, useEffect, useRef } from 'react'
@@ -8,7 +8,7 @@ import { MotionValue, SpringOptions, useInView, useMotionValue, useSpring } from
 import { Skills } from '@/components/Skills';
 import { RailDown } from '@/components/RailDown';
 import { educationItems, experienceItems } from '@/helpers/helpers';
-import { Transition } from '@/components/Transition';
+import { Transition } from '@/components/subcomponents/Transition';
 import { calculateAge } from '@/utils/utils';
 import { AGE } from '@/utils/globals';
 

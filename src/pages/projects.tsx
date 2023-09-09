@@ -1,5 +1,5 @@
-import { AnimatedText } from '@/components/AnimatedText';
-import { GithubIcon } from '@/components/Icons';
+import { AnimatedText } from '@/components/subcomponents/AnimatedText';
+import { GithubIcon } from '@/components/subcomponents/Icons';
 import { Layout } from '@/components/Layout';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -7,7 +7,7 @@ import Link from 'next/link';
 import React from 'react';
 import project1 from "../../public/images/projects/project1.png";
 import project2 from "../../public/images/projects/project2.png";
-import { Transition } from '@/components/Transition';
+import { Transition } from '@/components/subcomponents/Transition';
 
 const FeaturedProject = ({ title, summary, img, link, github }: FeaturedProjectProps) => {
     return (
