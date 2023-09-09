@@ -23,8 +23,7 @@ interface ExperienceProps {
     company: string;
     companyLink: string;
     time?: string;
-    address: string;
-    work?: string;
+    work: () => JSX.Element;
 };
 
 interface StaticImage {
@@ -35,10 +34,16 @@ interface StaticImage {
   };
 
 interface FeaturedProjectProps {
-    type: string;
+    type?: string;
     title: string;
     summary: string;
     img: StaticImage;
     link: string;
     github?: string;
+}
+
+interface CVPositionProps {
+    context: string;
+    tasks: JSX.Element[];
+    environement: JSX.Element[];
 }

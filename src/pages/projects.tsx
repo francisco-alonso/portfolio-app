@@ -5,10 +5,11 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import project1 from "../../public/images/projects/portfolio-cover-image.jpg";
+import project1 from "../../public/images/projects/project1.png";
+import project2 from "../../public/images/projects/project2.png";
 import { Transition } from '@/components/Transition';
 
-const FeaturedProject = ({ type, title, summary, img, link, github }: FeaturedProjectProps) => {
+const FeaturedProject = ({ title, summary, img, link, github }: FeaturedProjectProps) => {
     return (
         <article className='w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light dark:bg-dark dark:border-light shadow-2xl p-12 relative rounded-br-2xl lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
                 <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]'/>
@@ -17,7 +18,6 @@ const FeaturedProject = ({ type, title, summary, img, link, github }: FeaturedPr
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw" />
                 </Link>
                 <div className='w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6'>
-                    <span className='text-primary dark:text-primaryDark font-medium text-xl xs:text-base'>{type}</span>
                     <Link href={link} target='_blank' className='hover:underline underline-offset-2'>
                         <h2 className='my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm'>{title}</h2>
                     </Link>
@@ -75,61 +75,28 @@ const Projects = () => {
                     <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                         <div className='col-span-12'>
                             <FeaturedProject
-                                type="Featured Project"
                                 title="Network Sniffer"
-                                link="/"
+                                link="https://github.com/francisco-alonso/network_sniffer"
                                 summary='Scan open port given an IP address'
-                                img={project1}
+                                img={project2}
                             />
                         </div>
                         <div className='col-span-6 sm:col-span-12'>
-                            <Project
-                                type="Featured Project"
-                                title="Network Sniffer"
-                                link="/"
-                                summary='Scan open port given an IP address'
-                                img={project1}
-                            />
-                        </div>
-                        <div className='col-span-6 sm:col-span-12'>
-                            <Project
-                                type="Featured Project"
-                                title="Network Sniffer"
-                                link="/"
-                                summary='Scan open port given an IP address'
-                                img={project1}
-                            />
-                        </div>
-
-                        <div className='col-span-12'>
                             <FeaturedProject
-                                type="Featured Project"
-                                title="Network Sniffer"
-                                link="/"
-                                summary='Scan open port given an IP address'
+                                title="Diary App"
+                                link="https://github.com/francisco-alonso/diary-app"
+                                summary='Keep track of your daily tasks and notes'
                                 img={project1}
                             />
                         </div>
-
-
-                        <div className='col-span-6 sm:col-span-12'>
+                        {/* <div className='col-span-6 sm:col-span-12'>
                             <Project
-                                type="Featured Project"
                                 title="Network Sniffer"
                                 link="/"
                                 summary='Scan open port given an IP address'
                                 img={project1}
                             />
-                        </div>
-                        <div className='col-span-6 sm:col-span-12'>
-                            <Project
-                                type="Featured Project"
-                                title="Network Sniffer"
-                                link="/"
-                                summary='Scan open port given an IP address'
-                                img={project1}
-                            />
-                        </div>
+                        </div> */}
 
                     </div>
                 </Layout>
