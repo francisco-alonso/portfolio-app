@@ -89,15 +89,6 @@ const Projects = () => {
                                 img={project1}
                             />
                         </div>
-                        {/* <div className='col-span-6 sm:col-span-12'>
-                            <Project
-                                title="Network Sniffer"
-                                link="/"
-                                summary='Scan open port given an IP address'
-                                img={project1}
-                            />
-                        </div> */}
-
                     </div>
                 </Layout>
             </main>
