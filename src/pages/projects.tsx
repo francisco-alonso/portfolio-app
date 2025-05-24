@@ -7,6 +7,8 @@ import Link from 'next/link';
 import React from 'react';
 import project1 from "../../public/images/projects/project1.png";
 import project2 from "../../public/images/projects/project2.png";
+import project3 from "../../public/images/projects/project3.png";
+import project4 from "../../public/images/projects/project4.png";
 import { Transition } from '@/components/subcomponents/Transition';
 
 const FeaturedProject = ({ title, summary, img, link, github }: FeaturedProjectProps) => {
@@ -70,9 +72,15 @@ const Projects = () => {
             <Transition />
             <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light'>
                 <Layout className='pt-16'>
-                    <AnimatedText text="Custom Projects" className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
-
                     <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
+                        <div className='col-span-12'>
+                            <FeaturedProject
+                                title="Cloud Image Processing Service"
+                                link="https://github.com/francisco-alonso/image-processor"
+                                summary='A cloud solution to process images from a GCS bucket to another.'
+                                img={project3}
+                            />
+                        </div>
                         <div className='col-span-12'>
                             <FeaturedProject
                                 title="Network Sniffer"
@@ -83,10 +91,18 @@ const Projects = () => {
                         </div>
                         <div className='col-span-6 sm:col-span-12'>
                             <FeaturedProject
+                                title="ARP Network Scanner with Google Cloud Logging"
+                                link="https://github.com/francisco-alonso/diary-app"
+                                summary='Captures packets using gopacket and pcap in a specific network interface'
+                                img={project1}
+                            />
+                        </div>
+                        <div className='col-span-6 sm:col-span-12'>
+                            <FeaturedProject
                                 title="Diary App"
                                 link="https://github.com/francisco-alonso/diary-app"
                                 summary='Keep track of your daily tasks and notes'
-                                img={project1}
+                                img={project4}
                             />
                         </div>
                     </div>
