@@ -3,7 +3,30 @@ import { Job } from '@/components/subcomponents/Job';
 
 export const experienceItems: Array<ExperienceProps> = [
     {
-        position: 'Software Engineer, Frontend',
+        position: 'Senior Software Engineer',
+        company: 'Schmeider Electric',
+        companyLink: 'www.se.com',
+        time: 'Sept, 2023 - Present',
+        work: () => (
+            <Job
+                context='Schneider Electric leverages IoT through its EcoStruxure platform to enhance energy efficiency, automation, and real-time system monitoring. It integrates connected devices, analytics, and edge control across industries.'
+                tasks={[
+                    <>- Architected an event driven alert management system to trigger user alerts based on real time device data. With this data users can create conditions (based on its value) and the system will be able to notify the user if anything is unusual.</>,
+                    <>- Implemented a FIFO strategy for database scalability and sizing to ensure reliable event processing under high load.</>,
+                    <>- Implemented licensing controls to stop data collection and data computation restrictions when platform licenses expire.</>,
+                    <>- Tech support for 3 junior devs</>,
+                ]}
+                environement={[
+                    <><strong>Frontend: </strong>Vue & Pinia for state management</>,
+                    <><strong>Backend: </strong>Golang & MQTT for asycn communication</>,
+                    <><strong>Cloud: </strong>On-Prem Infra</>,
+                    <><strong>Software Methodology: </strong>Agile</>,
+                ]}
+            />
+        ),
+    },
+    {
+        position: 'Software Engineer',
         company: 'Symphony Communications',
         companyLink: 'www.symphony.com',
         time: 'Apr, 2022 - Oct, 2023',
@@ -11,19 +34,16 @@ export const experienceItems: Array<ExperienceProps> = [
             <Job
                 context='Symphony is a company focused on providing secure and compliant communication to the biggest financial institutions in the world like JP Morgan, HSBC or Goldman Sachs.'
                 tasks={[
-                    <> -Backbone migration. A big codebase has been migrated to <strong>React 16</strong> in order to reduce vulnerabilities. Vulnerabilities have been reduced by <strong>70%</strong> according to SNYK monitoring.</>,
-                    <> -Improvement of the account creation process via CSV up to <strong>10 times faster</strong>. Using web-workers, the CSV is split into series of batches that run in the background. Users can continue to use Symphony portal while accounts are being created.</>,
-                    <> -Design of a <strong>new release process</strong> for a frontend application.</>,
-                    <> -Conducted thorough <strong>unit and integration testing</strong> and debugging of features, resulting in a <strong>~40%</strong> reduction in bugs and issues reported by users.</>,
-                    <> -Participated in regular code reviews, providing constructive feedback to colleagues and maintaining code quality standards.</>,
-                    <> -<strong>Product demos</strong> for 10 different customers.</>,
-                    <> -Developed and enhanced features for a chat application used by thousands of users, contributing to improved user engagement and satisfaction.</>,
+                    <>- Contributed to the modernization and security of one the main products through framework migration.</>,
+                    <>- Improved development workflows, and collaboration.</>,
+                    <>- Led initiatives to enhance system performance, reliability, and test coverage.</>,
+                    <>- Shaped release strategies for new products, addressing critical security vulnerabilities, and supporting the development of administrative tools.</>,
                 ]}
                 environement={[
-                    <><strong>Frontend: </strong>React / Redux / Webpack / Gulp</>,
-                    <><strong>Testing: </strong>Enzyme / Jest / Jasmine / TS mockito</>,
-                    <><strong>Cloud: </strong>AWS (ECR, ECS, EC2 & Docker)</>,
-                    <><strong>Continous Integration: </strong>Jenkins / Groovy</>,
+                    <><strong>Frontend: </strong>Gatsby / Redux / Webpack</>,
+                    <><strong>Backend: </strong>Golang</>,
+                    <><strong>Testing: </strong>Enzyme / Jest</>,
+                    <><strong>Cloud: </strong>AWS ECR & GCP GKE</>,
                     <><strong>Software Methodology: </strong>Agile</>,
                 ]}
             />
