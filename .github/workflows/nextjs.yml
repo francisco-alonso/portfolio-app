@@ -29,6 +29,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Ensure upload-artifact is available
+        uses: actions/upload-artifact@v3
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up pnpm
