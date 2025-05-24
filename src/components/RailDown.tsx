@@ -39,9 +39,9 @@ const Details: React.FC<Props> = ({ data }) => {
                     <span className='capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm'>
                         {time}
                     </span>
-                    <p className='font-medium w-full md:text-sm'>
+                    <div className='font-medium w-full md:text-sm'>
                         {work()}
-                    </p>
+                    </div>
                 </motion.div>
             </li>
         )
