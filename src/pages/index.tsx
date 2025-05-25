@@ -9,6 +9,8 @@ import { LinkArrow } from '@/components/subcomponents/Icons';
 import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg'
 import { Transition } from '@/components/subcomponents/Transition';
 import { basePath } from '@/lib/utils';
+import { useThemeSwitcher } from '@/hooks/useThemeSwitcher';
+import { useEffect, useState } from 'react';
 
 const Home = () => {
   return (
@@ -27,8 +29,9 @@ const Home = () => {
                   alt='Francisco Lopez'
                   className='w-full h-auto lg:hidden md:inline-block md:w-full'
                   priority
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                  sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw'
                 />
+
               </div>
               <div className='w-1/2 flex flex-col  self-center lg:w-full lg:text-center mx-4'>
                 <AnimatedText text='Building distributed systems.' className='!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:text-5xl sm:!text-3xl' />
