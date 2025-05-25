@@ -43,6 +43,7 @@ interface FeaturedProjectProps {
 }
 
 interface CVPositionProps {
+    id: string;
     context: string;
     tasks: JSX.Element[];
     environement: JSX.Element[];

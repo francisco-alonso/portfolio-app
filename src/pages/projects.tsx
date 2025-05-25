@@ -94,7 +94,7 @@ const Projects = () => {
                                 title="ARP Network Scanner with Google Cloud Logging"
                                 link="https://github.com/francisco-alonso/diary-app"
                                 summary='Captures packets using gopacket and pcap in a specific network interface'
-                                img={project1}
+                                img={project4}
                             />
                         </div>
                         <div className='col-span-6 sm:col-span-12'>
@@ -102,7 +102,7 @@ const Projects = () => {
                                 title="Diary App"
                                 link="https://github.com/francisco-alonso/diary-app"
                                 summary='Keep track of your daily tasks and notes'
-                                img={project4}
+                                img={project1}
                             />
                         </div>
                     </div>

@@ -9,6 +9,7 @@ export const experienceItems: Array<ExperienceProps> = [
         time: 'Sept, 2023 - Present',
         work: () => (
             <Job
+                id='1'
                 context='Schneider Electric leverages IoT through its EcoStruxure platform to enhance energy efficiency, automation, and real-time system monitoring. It integrates connected devices, analytics, and edge control across industries.'
                 tasks={[
                     <>- Architected an event driven alert management system to trigger user alerts based on real time device data. With this data users can create conditions (based on its value) and the system will be able to notify the user if anything is unusual.</>,
@@ -32,6 +33,7 @@ export const experienceItems: Array<ExperienceProps> = [
         time: 'Apr, 2022 - Oct, 2023',
         work: () => (
             <Job
+                id='2'
                 context='Symphony is a company focused on providing secure and compliant communication to the biggest financial institutions in the world like JP Morgan, HSBC or Goldman Sachs.'
                 tasks={[
                     <>- Contributed to the modernization and security of one the main products through framework migration.</>,
@@ -56,6 +58,7 @@ export const experienceItems: Array<ExperienceProps> = [
         time: 'Feb, 2021 - Apr, 2022',
         work: () => (
             <Job
+                id='3'
                 tasks={[
                     <> -Architected and developed a robust trip management CRM system, streamlining the process of tracking, selling, and managing trips to Riviera Maya and Mexico.</>,
                     <> -Collaborated with cross-functional teams to design and implement user role systems, enabling seamless management of administrators, suppliers, and vendor users.</>,
@@ -80,6 +83,7 @@ export const experienceItems: Array<ExperienceProps> = [
         time: 'Jan, 2019 - Sept, 2019',
         work: () => (
             <Job
+                id='4'
                 tasks={[
                     <> -Making copies, faxing documents and providing optimum administrative support to employees.</>,
                     <> -Carry out various administrative tasks, including answering the telephone, taking and passing on messages, writing memos, making copies, downloading documents and welcoming visitors.</>,
@@ -98,6 +102,7 @@ export const experienceItems: Array<ExperienceProps> = [
         time: 'Jul, 2016 - Sept, 2016',
         work: () => (
             <Job
+                id='5'                
                 tasks={[
                     <> -<strong>60%</strong> reduction of bug fixes.</>,
                     <> -Feature for filtering of customers according to hospital section (oncology, digestive, etc.).</>,
