@@ -15,11 +15,12 @@ export const experienceItems: Array<ExperienceProps> = [
                     <>- Architected an event driven alert management system to trigger user alerts based on real time device data. With this data users can create conditions (based on its value) and the system will be able to notify the user if anything is unusual.</>,
                     <>- Implemented a FIFO strategy for database scalability and sizing to ensure reliable event processing under high load.</>,
                     <>- Implemented licensing controls to stop data collection and data computation restrictions when platform licenses expire.</>,
+                    <>- Enrich the SSPA microfrontend orchestrator by adding more features and functionalities. It allowed the teams to integrate several microforntends making easier to maintain and scale the platform.</>,
                     <>- Tech support for 3 junior devs</>,
                 ]}
                 environement={[
-                    <><strong>Frontend: </strong>Vue & Pinia for state management</>,
-                    <><strong>Backend: </strong>Golang & MQTT for asycn communication</>,
+                    <><strong>Frontend: </strong>Vue, React and Single SPA</>,
+                    <><strong>Backend: </strong>Golang & MQTT</>,
                     <><strong>Cloud: </strong>On-Prem Infra</>,
                     <><strong>Software Methodology: </strong>Agile</>,
                 ]}

@@ -57,15 +57,15 @@ const About = () => {
                         <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>
                             <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
                             <p>
-                                I&apos;m Francisco, a {calculateAge(AGE)}-year-old software engineer with an intriguing mix of backgrounds. I started my life&apos;s journey in Switzerland but spent my entire childhood soaking up the sun in Spain, where I decided to dive into the world of computer engineering. It&apos;s safe to say I&apos;ve now devoted a considerable chunk of my existence to it.
+                                I&apos;m Francisco, a {calculateAge(AGE)}-year-old software engineer with an intriguing mix of backgrounds. I started my life&apos;s journey in Switzerland but spent my entire childhood in Spain, where I decided to study computer engineering.
                             </p>
                             <br />
                             <p>
-                                Currently, I&apos;m stationed in the lovely South of France, diligently working as a software engineer with a particular knack for frontend development. Yet, my heart truly belongs to the realm of cloud engineering. I find myself captivated by the intricate architectures of Google Cloud Platform (GCP) and Amazon Web Services (AWS), constantly exploring ways to make them work wonders.
+                                Currently, I&apos;m stationed in the South of France, working as a software engineer with a particular knack for frontend development. I find myself captivated by the intricate architectures of Google Cloud Platform (GCP), constantly exploring ways to make them work with other technologies.
                             </p>
                             <br />
                             <p>
-                                Beyond coding, I have a penchant for outdoor adventures, from hiking in the Swiss Alps to enjoying the beaches of Spain. My journey from Switzerland to Spain and now to the charming French Riviera mirrors my zest for exploration and my commitment to bringing fresh perspectives to the ever-evolving tech landscape. So, if you&apos;re in search of a software engineer with a global perspective and a passion for problem-solving, I could be your ideal collaborator.
+                                Beyond coding, I liek doing outdoor adventures, like hiking.
                             </p>
                         </div>
                         <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8'>
@@ -82,13 +82,13 @@ const About = () => {
                             </div>
                             <div className='flex flex-col items-end justify-center xl:items-center'>
                                 <span className='inline-block text-7xl font-bold md:text-6xl sm-text-5xl xs:text-4xl'>
-                                <AnimatedNumbers value={6}/>+
+                                <AnimatedNumbers value={5}/>+
                                 </span>
                                 <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm'>Years of Experience</h2>
                             </div>
                         </div>
                     </div>
-                    <RailDown title='Experience' items={experienceItems} />
+                    {/* <RailDown title='Experience' items={experienceItems} /> */}
                     <RailDown title='Education' items={educationItems} />
                 </Layout>
             </main>
